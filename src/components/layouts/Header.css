@@ -1,0 +1,141 @@
+.header {
+  background-color: #201E20;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-brand img {
+  margin: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerLeft a {
+  margin: 0 10px;
+}
+
+.headerLeft a > span {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.headerLeft a > span:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.header__icon {
+  width: 80px;
+  cursor: pointer;
+}
+
+.user__avatar {
+  font-size: 2rem;
+}
+
+.avatar-nav {
+  margin-right: 0.6rem;
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.avatar-round {
+  border-radius: 50%;
+}
+
+.avatar-nav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#watchlist_btn {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
+}
+
+#watchlist_btn:hover {
+  color: red;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#login_btn,
+#view_btn {
+  background-image: linear-gradient(
+    to right,
+    #000000 0%,
+    #434343 51%,
+    #000000 100%
+  );
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: yellow;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+}
+
+#login_btn:hover,
+#view_btn:hover {
+  color: red;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+  .headerLeft,
+  .headerRight {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .headerLeft a {
+    margin: 5px;
+  }
+
+  .navbar-brand img {
+    width: 80px;
+    height: auto;
+  }
+
+  .headerRight {
+    margin-top: 10px;
+  }
+}
